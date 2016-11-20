@@ -1,0 +1,58 @@
+// based on a keyboard map from an 'xkb/symbols/de' file
+
+default
+xkb_symbols "basic" {
+
+    include "latin(type4)"
+
+    name[Group1]="German";
+
+//    key <AE02>  { [         2,   quotedbl,  twosuperior,    oneeighth ] };
+//    key <AE03>  { [         3,    section, threesuperior,    sterling ] };
+//    key <AE04>  { [         4,     dollar,   onequarter,     currency ] };
+
+//    key <AE11> {type[Group1]="FOUR_LEVEL_PLUS_LOCK",  symbols[Group1]=
+//                  [ssharp, question, backslash, questiondown, 0x1001E9E ]};
+// The unicode capital letter sharp s U+1E9E is transformed to "SS"
+// to match the rules for capitalizing sharp s in german.
+// If the capital sharp s is needed, delete the line
+// starting with <U1E9C> from /usr/share/X11/locale/iso8859-15/Compose.
+// If both doubled S and capital sharp s are needed, use  0x1001E9E
+// for capital sharp s and some free unicode codepoint like 0x1001E9C
+// for doubled S. Don`t forget to change this in the Compose file, too.
+
+    key <AD01>  { [         q,          Q,          1,            1 ] };
+    key <AD02>  { [         w,          W,          2,            2 ] };
+    key <AD03>  { [         e,          E,          3,            3 ] };
+    key <AD04>  { [         r,          R,          4,            4 ] };
+    key <AD05>  { [         t,          T,          5,            5 ] };
+    key <AD06>  { [         y,          Y,          6,            6 ] };
+    key <AD07>  { [         u,          U,          7,            7 ] };
+    key <AD08>  { [         i,          I,          8,            8 ] };
+    key <AD09>  { [         o,          O,          9,            9 ] };
+    key <AD10>  { [         p,          P,          0,            0 ] };
+
+    key <AC01>  { [         a,          A,     exclam,       exclam ] };
+    key <AC02>  { [         s,          S, numbersign,   numbersign ] };
+    key <AC03>  { [         d,          D,     dollar,       dollar ] };
+    key <AC04>  { [         f,          F,    percent,      percent ] };
+    key <AC05>  { [         g,          G,  ampersand,    ampersand ] };
+    key <AC06>  { [         h,          H,   asterisk,     asterisk ] };
+    key <AC07>  { [         j,          J,  parenleft,    parenleft ] };
+    key <AC08>  { [         k,          K, parenright,   parenright ] };
+    key <AC09>  { [         l,          L,      slash,        slash ] };
+
+    key <AB01>  { [         z,          Z,        Tab,          Tab ] };
+    key <AB02>  { [         x,          X,    EuroSign,    EuroSign ] };
+    key <AB03>  { [         c,          C,  underscore,  underscore ] };
+    key <AB04>  { [         v,          V,       minus,       minus ] };
+    key <AB05>  { [         b,          B,        plus,        plus ] };
+    key <AB06>  { [         n,          N,       equal,       equal ] };
+    key <AB07>  { [         m,          M,  apostrophe,  apostrophe ] };
+
+//    include "kpdl(comma)"
+
+    include "level3(ralt_switch)"
+    include "level3(lalt_switch)"
+};
+

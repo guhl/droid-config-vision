@@ -1,0 +1,1 @@
+CONFIG="-n -v --file=/etc/pulse/arm_msm7x30_vision.pa"
