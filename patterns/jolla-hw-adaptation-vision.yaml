@@ -75,5 +75,11 @@ Requires:
 # For devices where test_gps eventually gets a fix:
 - geoclue-provider-hybris
 
+# Flashlight
+- jolla-settings-system-flashlight
+
+# For mounting SD card automatically
+- sd-utils
+
 Summary: Jolla HW Adaptation vision
 
